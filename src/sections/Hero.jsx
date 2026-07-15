@@ -61,7 +61,7 @@ export default function Hero() {
         <img
           src={profileImg}
           alt="Karthikeyan"
-          className="w-40 h-40 sm:w-52 sm:h-52 md:w-64 md:h-64 xl:w-80 xl:h-80 object-cover rounded-full border border-line shadow-[0_0_60px_rgba(139,92,246,0.25)] mx-auto"
+          className="w-64 h-64 xl:w-80 xl:h-80 object-cover rounded-full border border-line shadow-[0_0_60px_rgba(139,92,246,0.25)]"
        />
 
         <motion.p
