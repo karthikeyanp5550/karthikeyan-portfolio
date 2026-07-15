@@ -1,0 +1,30 @@
+/* scrollbar.css
+   Custom scrollbar treatment matching the black-luxury / glow theme. */
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #8b5cf6 #050505;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #8b5cf6, #3b82f6);
+  border-radius: 999px;
+  border: 2px solid #050505;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #a78bfa, #60a5fa);
+}
+
+::-webkit-scrollbar-corner {
+  background: #050505;
+}
