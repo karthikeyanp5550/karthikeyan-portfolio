@@ -3,16 +3,25 @@ import Lenis from "lenis";
 
 export default function useLenis() {
   useEffect(() => {
-    const lenis = new Lenis();
+    // Disable Lenis on mobile devices
+    if (window.innerWidth < 768) return;
+
+    const lenis = new Lenis({
+      duration: 1.2,
+      smoothWheel: true,
+    });
+
+    let rafId;
 
     function raf(time) {
       lenis.raf(time);
-      requestAnimationFrame(raf);
+      rafId = requestAnimationFrame(raf);
     }
 
-    requestAnimationFrame(raf);
+    rafId = requestAnimationFrame(raf);
 
     return () => {
+      cancelAnimationFrame(rafId);
       lenis.destroy();
     };
   }, []);

@@ -36,7 +36,10 @@ function ProjectCard({ project, i }) {
       custom={i}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true }}
+      viewport={{
+        once: true,
+        amount: 0.2
+      }}
       ref={cardRef}
       onMouseMove={handleMove}
       onMouseLeave={handleLeave}
@@ -113,7 +116,10 @@ export default function Projects() {
               variants={fadeUp}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true }}
+              viewport={{
+                once: true,
+                amount: 0.2
+              }}
               className="eyebrow text-violet-soft mb-4"
             >
               03 — Things I've built so far
@@ -123,7 +129,10 @@ export default function Projects() {
               custom={1}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true }}
+              viewport={{
+                once: true,
+                amount: 0.2
+              }}
               className="font-display text-4xl md:text-6xl font-semibold text-bone"
             >
               Projects

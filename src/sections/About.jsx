@@ -28,7 +28,10 @@ export default function About() {
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true }}
+          viewport={{
+            once: true,
+            amount: 0.2
+          }}
           className="eyebrow text-violet-soft mb-4"
         >
           01 — Get to know me
@@ -38,7 +41,10 @@ export default function About() {
           custom={1}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true }}
+          viewport={{
+            once: true,
+            amount: 0.2
+          }}
           className="font-display text-4xl md:text-6xl font-semibold text-bone mb-14"
         >
           About Me
@@ -50,7 +56,10 @@ export default function About() {
             custom={2}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true }}
+            viewport={{
+              once: true,
+              amount: 0.2
+            }}
             className="md:col-span-7"
           >
             <p className="text-xl md:text-2xl text-bone/90 leading-relaxed font-display font-light">
@@ -69,7 +78,10 @@ export default function About() {
             custom={3}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true }}
+            viewport={{
+              once: true,
+              amount: 0.2
+            }}
             className="md:col-span-5 rounded-2xl glass card-glow p-8 flex flex-col justify-between"
           >
             <div>
@@ -97,7 +109,10 @@ export default function About() {
               custom={i}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true }}
+              viewport={{
+                once: true,
+                amount: 0.2
+              }}
               whileHover={{ y: -6 }}
               className="rounded-xl bg-surface border border-line p-6 card-glow transition-colors hover:border-violet/40"
             >

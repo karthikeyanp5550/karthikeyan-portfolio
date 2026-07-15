@@ -32,7 +32,10 @@ export default function Education() {
             variants={fadeUp}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true }}
+            viewport={{
+              once: true,
+              amount: 0.2
+            }}
             className="eyebrow text-violet-soft mb-4"
           >
             05 — My academic journey
@@ -42,7 +45,10 @@ export default function Education() {
             custom={1}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true }}
+            viewport={{
+              once: true,
+              amount: 0.2
+            }}
             className="font-display text-4xl md:text-6xl font-semibold text-bone mb-8"
           >
             Education
@@ -53,7 +59,10 @@ export default function Education() {
             custom={2}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true }}
+            viewport={{
+              once: true,
+              amount: 0.2
+            }}
             className="relative rounded-2xl overflow-hidden border border-line h-64 md:h-80"
           >
             <img
@@ -75,7 +84,10 @@ export default function Education() {
               custom={i + 3}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true }}
+              viewport={{
+                once: true,
+                amount: 0.2
+              }}
               className="relative pb-4"
             >
               <span className="absolute -left-[34px] top-1 w-3 h-3 rounded-full bg-violet shadow-[0_0_16px_rgba(139,92,246,0.7)]" />

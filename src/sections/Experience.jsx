@@ -40,7 +40,10 @@ export default function Experience() {
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true }}
+          viewport={{
+            once: true,
+            amount: 0.2
+          }}
           className="rounded-2xl border border-line glass p-8 md:p-10 mb-10 card-glow"
         >
           <div className="flex items-start gap-5">
@@ -68,7 +71,10 @@ export default function Experience() {
               custom={i + 1}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true }}
+              viewport={{
+                once: true,
+                amount: 0.2
+              }}
               whileHover={{ y: -6 }}
               className="rounded-xl bg-surface border border-line p-6 card-glow hover:border-violet/40 transition-colors"
             >

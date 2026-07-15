@@ -34,7 +34,10 @@ export default function Certificates() {
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true }}
+          viewport={{
+            once: true,
+            amount: 0.2
+          }}
           className="eyebrow text-violet-soft mb-4"
         >
           04 — Achievements &amp; Milestones
@@ -45,7 +48,10 @@ export default function Certificates() {
           custom={1}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true }}
+          viewport={{
+            once: true,
+            amount: 0.2
+          }}
           className="font-display text-4xl md:text-6xl font-semibold text-bone mb-14"
         >
           Certificates &amp; Badges
@@ -59,7 +65,10 @@ export default function Certificates() {
               custom={i}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true }}
+              viewport={{
+                once: true,
+                amount: 0.2
+              }}
               whileHover={{ y: -8 }}
               className="group rounded-xl bg-surface border border-line overflow-hidden card-glow hover:border-violet/40 transition-all duration-300"
             >

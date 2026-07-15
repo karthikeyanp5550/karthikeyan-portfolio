@@ -27,7 +27,11 @@ export default function SectionTitle({ index, eyebrow, title, align = 'left', cl
         variants={fadeUp}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true }}
+        viewport={{
+          once: true,
+          amount: 0.2
+        }}
+        
         className="eyebrow text-violet-soft mb-4"
       >
         {index ? `${index} — ${eyebrow}` : eyebrow}
@@ -37,7 +41,11 @@ export default function SectionTitle({ index, eyebrow, title, align = 'left', cl
         custom={1}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true }}
+        viewport={{
+          once: true,
+          amount: 0.2
+        }}
+        
         className="font-display text-4xl md:text-6xl font-semibold text-bone"
       >
         {title}

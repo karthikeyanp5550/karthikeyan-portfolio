@@ -31,7 +31,10 @@ export default function Skills() {
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true }}
+          viewport={{
+            once: true,
+            amount: 0.2
+          }}
           className="eyebrow text-violet-soft mb-4"
         >
           02 — Technologies I work with
@@ -41,7 +44,10 @@ export default function Skills() {
           custom={1}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true }}
+          viewport={{
+            once: true,
+            amount: 0.2
+          }}
           className="font-display text-4xl md:text-6xl font-semibold text-bone mb-14"
         >
           Skills
@@ -55,7 +61,10 @@ export default function Skills() {
               custom={i}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true }}
+              viewport={{
+                once: true,
+                amount: 0.2
+              }}
               whileHover={{ scale: 1.05, y: -4 }}
               className="aspect-square rounded-xl bg-surface border border-line flex flex-col items-center justify-center gap-2 card-glow hover:border-azure/40 transition-colors px-2 text-center"
             >
@@ -66,10 +75,13 @@ export default function Skills() {
         </div>
       </div>
 
-      <div className="mt-16 border-y border-line py-5">
-        <div className="flex animate-marquee whitespace-nowrap">
+      <div className="mt-16 border-y border-line py-5 overflow-hidden">
+        <div className="hidden md:flex animate-marquee whitespace-nowrap">
           {marqueeItems.map((s, i) => (
-            <span key={i} className="mx-6 font-display text-2xl md:text-3xl text-mute/40">
+            <span
+              key={i}
+              className="mx-6 font-display text-2xl md:text-3xl text-mute/40"
+            >
               {s.name} <span className="text-violet/40">•</span>
             </span>
           ))}

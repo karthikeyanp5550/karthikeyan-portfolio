@@ -79,7 +79,10 @@ export default function Contact() {
             variants={fadeUp}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true }}
+            viewport={{
+              once: true,
+              amount: 0.2
+            }}
             className="md:col-span-5"
           >
             <p className="text-mute leading-relaxed max-w-sm mb-8">
@@ -95,7 +98,10 @@ export default function Contact() {
                   custom={i + 1}
                   initial="hidden"
                   whileInView="visible"
-                  viewport={{ once: true }}
+                  viewport={{
+                    once: true,
+                    amount: 0.2
+                  }}
                   className="flex items-center gap-4"
                 >
                   <span className="w-11 h-11 shrink-0 rounded-full border border-line glass flex items-center justify-center text-violet-soft">
@@ -123,7 +129,10 @@ export default function Contact() {
             custom={2}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true }}
+            viewport={{
+              once: true,
+              amount: 0.2
+            }}
             onSubmit={handleSubmit}
             className="md:col-span-7 rounded-2xl border border-line glass p-8 card-glow"
           >

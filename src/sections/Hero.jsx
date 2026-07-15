@@ -54,16 +54,15 @@ export default function Hero() {
       </div>
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-void/40 to-void pointer-events-none" />
 
-      <div className="relative z-10 max-w-6xl mx-auto px-6 pt-24 w-full">
+      <div className="relative z-10 max-w-6xl mx-auto w-full px-4 sm:px-6 pt-24 overflow-x-hidden">
         <div className="max-w-xl">
           {/* eyebrow, h1, h2, p, buttons — unchanged */}
         </div>
         <img
           src={profileImg}
           alt="Karthikeyan"
-          className="w-64 h-64 xl:w-80 xl:h-80 object-cover rounded-full border border-line shadow-[0_0_60px_rgba(139,92,246,0.25)]"
-        />
-          
+          className="w-40 h-40 sm:w-52 sm:h-52 md:w-64 md:h-64 xl:w-80 xl:h-80 object-cover rounded-full border border-line shadow-[0_0_60px_rgba(139,92,246,0.25)] mx-auto"
+       />
 
         <motion.p
           initial={{ opacity: 0, y: 10 }}
