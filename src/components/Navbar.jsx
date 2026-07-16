@@ -29,9 +29,19 @@ export default function Navbar() {
   }, [])
 
   const goTo = (id) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
-    setMenuOpen(false)
-  }
+    setMenuOpen(false);
+
+    setTimeout(() => {
+      const element = document.getElementById(id);
+
+      if (element) {
+        element.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    }, 300);
+  };
 
   return (
     <header

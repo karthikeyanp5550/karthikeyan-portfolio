@@ -47,7 +47,7 @@ export default function Hero() {
         `,
       }}
     >
-      <div className="absolute inset-0 opacity-70 z-0">
+      <div className="absolute inset-0 opacity-70 z-0 pointer-events-none">
         <Suspense fallback={null}>
           <ParticleField />
         </Suspense>
