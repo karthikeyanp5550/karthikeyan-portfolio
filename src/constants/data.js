@@ -70,7 +70,7 @@ export const PROJECTS = [
     image: portfolioImg,
     stack: ["React", "Three.js", "Tailwind CSS"],
     github: "https://github.com/yourusername/portfolio",
-    demo: "https://yourportfolio.vercel.app",
+    demo: "https://karthikeyan-portfolio-inky.vercel.app/",
   },
 
   {
@@ -110,6 +110,7 @@ export const PROJECTS = [
   },
 ];
 
+import tech from "../assets/certificates/Internship.png";
 import hpAI from "../assets/certificates/hp-ai.png";
 import geminiStudent from "../assets/certificates/gemini-student.png";
 import geminiEducator from "../assets/certificates/gemini-educator.png";
@@ -119,6 +120,14 @@ import cloudFunctions from "../assets/certificates/cloud-functions.png";
 import cloudStorage from "../assets/certificates/cloud-storage.png";
 
 export const CERTIFICATES = [
+  {
+    id: 0,
+    title: "Web Development Internship",
+    issuer: "TechSphere Consultancy",
+    type: "CERTIFICATE",
+    image: tech,
+    link: "#",
+  },
   {
     id: 1,
     title: "AI for Beginners",
@@ -188,7 +197,7 @@ export const EDUCATION = [
 ]
 
 export const SOCIALS = {
-  github: '#',
-  linkedin: '#',
-  instagram: '#',
+  github: 'https://github.com/karthikeyanp5550',
+  linkedin: 'www.linkedin.com/in/karthikeyan-p-827888341',
+  instagram: '#https://www.instagram.com/_.karthiikz._/?hl=en',
 }

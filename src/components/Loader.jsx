@@ -44,7 +44,7 @@ export default function Loader({ onDone }) {
               animate={{ y: 0 }}
               transition={{ duration: 0.8, ease: [0.65, 0, 0.35, 1] }}
             >
-              KP.
+              Karthikeyan.
             </motion.span>
           </motion.div>
           <div className="mt-8 w-48 h-px bg-white/10 relative overflow-hidden">

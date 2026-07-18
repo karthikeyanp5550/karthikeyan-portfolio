@@ -55,7 +55,7 @@ export default function Navbar() {
           data-cursor="interactive"
           className="font-display font-semibold text-xl tracking-tight text-bone"
         >
-          K<span className="text-violet">.</span>
+          Karthi<span className="text-violet">k</span>
         </button>
 
         <ul className="hidden md:flex items-center gap-8">
