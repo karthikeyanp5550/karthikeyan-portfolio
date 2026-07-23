@@ -53,7 +53,7 @@ export default function Experience() {
             <div>
               <p className="eyebrow text-mute mb-2">Currently</p>
               <h3 className="font-display text-xl md:text-2xl text-bone mb-3">
-                No professional experience yet — I'm a student.
+                 I am a student.
               </h3>
               <p className="text-mute leading-relaxed max-w-2xl">
                 I'm a {PROFILE.year.toLowerCase()} {PROFILE.degree.toLowerCase()} student focused on building a
